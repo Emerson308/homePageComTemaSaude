@@ -12,6 +12,10 @@ ul{
     flex-wrap: wrap;
 }
 
+.font-32{
+    font-size: 32px;
+}
+
 a{
     color: none;
     text-decoration: none;
@@ -117,8 +121,8 @@ header{
 
 .imagemApresentacao{
     /* width: 50%; */
-    height: auto;
     flex: 50%;
+    height: auto;
     background-image: url(imagens/saudavel.jpg);
     background-size: contain;
     background-position: center;
@@ -141,10 +145,12 @@ header{
 .tituloAlimentacaoSaudavel{
     border-radius: 50px;
     background-color: #fdfd56;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
     /* border: 1px solid black; */
     /* height: 130px; */
     display: flex;
-    padding: 15px 30px;
+    padding: 25px 30px;
     /* padding-top: 30px; */
     /* border-bottom: 8px solid black; */
     justify-content: center;
@@ -154,7 +160,35 @@ header{
 }
 
 .alimentacaoSaudaveDicasPraticas{
+    /* border: 1px solid black; */
+    height: 450px;
+    background-color: #ff6961;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    display: flex;
 
+}
+
+.containerAlimentacaoDicas{
+    border: 1px solid black;
+    flex: 50%;
+    
+}
+
+.imagemAlimentacaoDicas{
+    border: 1px solid black;
+    flex: 50%;
+    height: auto;
+    background-image: url(imagens/imagemDicasComidas.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.tituloAlimentacaoDicas{
+    font-size: 32px;
+    padding-left: 20px ;
 }
 
 .alimentacaoSaudavelCarroceldeReceitas{
