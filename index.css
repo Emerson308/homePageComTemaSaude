@@ -12,10 +12,6 @@ ul{
     flex-wrap: wrap;
 }
 
-.font-32{
-    font-size: 32px;
-}
-
 a{
     color: none;
     text-decoration: none;
@@ -43,12 +39,12 @@ header{
     height: 130px;
     display: flex;
     margin-bottom: 40px;
-    padding: 0 5%;
+    /* padding: 0 5%; */
     /* justify-content: space-around; */
 }
 
 .logo{
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: 350px;
     display: flex;
     align-items: center;
@@ -56,7 +52,7 @@ header{
 }
 
 .navbar{
-    /* border: 1px solid purple; */
+    border: 1px solid purple;
     margin: 0 auto;
     flex: 1;
     display: flex;
@@ -130,7 +126,7 @@ header{
 }
 
 .sectionAlimentacaoSaudavel{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 90dvw;
     margin: 0 auto;
     height: 700px;
@@ -138,81 +134,150 @@ header{
 }
 
 .containerAlimentacaoSaudavel{
-    border: 1px solid black;
-    height: 100%;
+    /* border: 1px solid black; */
+    height: 50%;
+    margin: 0 auto;
 }
 
 .tituloAlimentacaoSaudavel{
-    border-radius: 50px;
-    background-color: #fdfd56;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
+    border-radius: 10px;
+    /* background-color: #449898; */
+    /* border-bottom-right-radius: 0px; */
+    /* border-bottom-left-radius: 0px; */
     /* border: 1px solid black; */
     /* height: 130px; */
     display: flex;
+    width: fit-content;
+    margin: 0 auto;
     padding: 25px 30px;
+    margin-bottom: 40px;
     /* padding-top: 30px; */
-    /* border-bottom: 8px solid black; */
+    border-bottom: 8px solid black;
     justify-content: center;
     align-items: center;
-    font-size: 32px;
+    font-size: 36px;
     text-align: center;
 }
 
 .alimentacaoSaudaveDicasPraticas{
-    /* border: 1px solid black; */
-    height: 450px;
-    background-color: #ff6961;
+    border: 2px solid black;
+    /* height: 450px; */
+    background-color: #f58172;
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
+    border-radius: 50px;
+    /* padding-bottom: 40px; */
     display: flex;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
 
 }
 
 .containerAlimentacaoDicas{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     flex: 50%;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
     
 }
 
 .imagemAlimentacaoDicas{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     flex: 50%;
+    /* margin: 10px; */
+    border-radius: 50px;
+    /* opacity: 0.9; */
+    /* border-top-left-radius: 0; */
+    /* border-bottom-left-radius: 0; */
+    /* padding: 20px; */
     height: auto;
     background-image: url(imagens/imagemDicasComidas.jpg);
     background-size: contain;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
 
 }
 
 .tituloAlimentacaoDicas{
     font-size: 32px;
-    padding-left: 20px ;
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+.textoAlimentacaoDicas{
+    display: flex;
+    /* margin: 0 auto; */
+    margin-top: auto;
+    margin-bottom: auto;
+    /* border: 1px solid black; */
+    padding-left: 30px;
+    justify-content: center;
+    /* align-items: center; */
+    font-size: 18px;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 40px;
 }
 
 .alimentacaoSaudavelCarroceldeReceitas{
+    border: 1px solid black;
+    height: 450px;
+    background-color: #f9bd4b;
+    border-radius: 50px;
+    padding: 25px;
+}
 
+.tituloCarrocelReceitas{
+    font-size: 32px;
+    text-align: center;
 }
 
 @media (max-width: 1000px) { 
-    ul{
+    /* ul{
         gap: 5px;
         flex-direction: column;
-    }
-}
+    } */
 
-@media (max-width: 550px) { 
     header{
         flex-direction: column;
+        padding: 0px 0px;
     }
 
     .logo{
         margin: 0 auto;
     }
 
+    .imagemAlimentacaoDicas{
+        display: none;
+    }
+
+    .navbar{
+        padding-left: 0;
+        /* border: 1px solid purple; */
+        /* margin: 0 auto; */
+        flex: 100%;
+        width: 100%;
+        height: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* padding-right: 20%; */
+    }
+
+    .navbar ul li{
+        border-bottom: 3px solid #404040;
+    }
+    
+}
+
+@media (max-width: 550px) { 
+    
     ul{
-        gap: 25px;
+        /* font-size: 13px; */
+        gap: 10px;
         flex-direction: row;
     }
 }
