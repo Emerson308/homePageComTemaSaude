@@ -1,3 +1,4 @@
+/* external css: flickity.css */
 
 *{
     padding: 0;
@@ -44,7 +45,7 @@ header{
 }
 
 .logo{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 350px;
     display: flex;
     align-items: center;
@@ -52,7 +53,7 @@ header{
 }
 
 .navbar{
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     margin: 0 auto;
     flex: 1;
     display: flex;
@@ -97,7 +98,7 @@ header{
 .containerApresentacao button{
     border: none;
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: center;
     height: 50px;
     border-radius: 25px;
@@ -130,13 +131,17 @@ header{
     width: 90dvw;
     margin: 0 auto;
     height: 700px;
+    height: fit-content;
     border-radius: 50px;
+    margin-bottom: 40px;
+    /* position: relative; */
 }
 
 .containerAlimentacaoSaudavel{
     /* border: 1px solid black; */
-    height: 50%;
+    /* height: 50%; */
     margin: 0 auto;
+    /* position: relative; */
 }
 
 .tituloAlimentacaoSaudavel{
@@ -181,7 +186,7 @@ header{
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
-    
+
 }
 
 .imagemAlimentacaoDicas{
@@ -223,19 +228,460 @@ header{
 }
 
 .alimentacaoSaudavelCarroceldeReceitas{
-    border: 1px solid black;
-    height: 450px;
+    border: 2px solid black;
+    /* height: 450px; */
+    margin: 0 auto;
+    width: 60%;
     background-color: #f9bd4b;
     border-radius: 50px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
     padding: 25px;
+    padding-bottom: 30px;
+    /* margin-bottom:; */
 }
 
 .tituloCarrocelReceitas{
+    /* border: 1px solid black; */
     font-size: 32px;
     text-align: center;
 }
 
-@media (max-width: 1000px) { 
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.carrocelReceitas{
+    /* border: 1px solid black; */
+    height: 350px;
+}
+
+.receitaDoCarrossel{
+    height: 330px;
+    border: 1px solid black;
+    width: 80%;
+    margin-right: 10px;
+    border-radius: 50px;
+    background-color: white;
+    /* padding: 15px; */
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 25px; */
+    justify-content: space-evenly;
+    /* counter-increment: receitaDoCarrossel; */
+}
+
+.receitaDoCarrossel:before{
+    /* content: counter(receitaDoCarrossel); */
+    /* text-align: center; */
+    line-height: 200px;
+    font-size: 80px;
+}
+
+.nomeReceitaCarrossel{
+    /* border: 1px solid black; */
+    font-size: 32px;
+    text-align: center;
+}
+
+.imagemReceitaCarrossel{
+    margin: 0 auto;
+    /* height: 100%; */
+}
+
+.sectionExerciciosFisicos {
+    width: 90dvw;
+    margin: 40px auto;
+    border-radius: 50px;
+    background-color: #a7f581;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.tituloExerciciosFisicos {
+    font-size: 36px;
+    text-align: center;
+    border-bottom: 8px solid black;
+    padding-bottom: 25px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.exerciciosFisicosEncontreAtividade {
+    background-color: #72f5b3;
+    border-radius: 50px;
+    padding: 40px;
+    display: flex;
+    gap: 40px;
+}
+
+.containerExerciciosAtividade {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.tituloExerciciosAtividade {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.textoExerciciosAtividade p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.imagemExerciciosAtividade {
+    flex: 50%;
+    background-image: url('imagens/exercicios.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+}
+
+.exerciciosFisicosPlanosDeTreino {
+    background-color: #bdf591;
+    border-radius: 50px;
+    padding: 40px;
+}
+
+.tituloPlanosDeTreino {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.containerPlanosDeTreino {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.planoDeTreino {
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 25px;
+    flex: 1 0 300px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.planoDeTreino h3 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 2px solid #303030;
+    padding-bottom: 10px;
+}
+
+.planoDeTreino ul {
+    list-style: disc;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.planoDeTreino ul li {
+    margin-bottom: 10px;
+}
+
+.exerciciosFisicosImportanciaRegularidade {
+    background-color: #cef59f;
+    border-radius: 50px;
+    padding: 40px;
+}
+
+.tituloImportanciaRegularidade {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.textoImportanciaRegularidade p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Estilos para a seção de Saúde Mental */
+.sectionSaudeMental {
+    width: 90dvw;
+    margin: 40px auto;
+    border-radius: 50px;
+    background-color: #81a6f5;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.tituloSaudeMental {
+    font-size: 36px;
+    text-align: center;
+    border-bottom: 8px solid black;
+    padding-bottom: 25px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.saudeMentalEntendendo {
+    background-color: #72b3f5;
+    border-radius: 50px;
+    padding: 40px;
+    display: flex;
+    gap: 40px;
+}
+
+.textoEntendendoSaudeMental {
+    flex: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.tituloEntendendoSaudeMental {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.textoEntendendoSaudeMental p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.imagemEntendendoSaudeMental {
+    flex: 40%;
+    background-image: url('imagens/saude-mental.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+}
+
+.saudeMentalDicasBemEstar {
+    background-color: #91bdf5;
+    border-radius: 50px;
+    padding: 40px;
+}
+
+.tituloDicasBemEstar {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.listaDicasBemEstar {
+    list-style: disc;
+    padding-left: 30px;
+    font-size: 18px;
+}
+
+.listaDicasBemEstar li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.saudeMentalOndeBuscarAjuda {
+    background-color: #bde1f5;
+    border-radius: 50px;
+    padding: 40px;
+}
+
+.tituloOndeBuscarAjuda {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.textoOndeBuscarAjuda p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.textoOndeBuscarAjuda a {
+    color: #303030;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Estilos para a seção de Recursos e Apoio */
+.sectionRecursosApoio {
+    width: 90dvw;
+    margin: 40px auto;
+    border-radius: 50px;
+    background-color: #f5bc4b;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.tituloRecursosApoio {
+    font-size: 36px;
+    text-align: center;
+    border-bottom: 8px solid black;
+    padding-bottom: 25px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.recursosCalculadorasFerramentas,
+.recursosArtigosNoticias,
+.recursosFAQ {
+    background-color: #f9d28c;
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tituloCalculadorasFerramentas,
+.tituloArtigosNoticias,
+.tituloFAQ {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.listaCalculadorasFerramentas,
+.listaArtigosNoticias {
+    list-style: none;
+    padding-left: 0;
+    font-size: 18px;
+}
+
+.listaCalculadorasFerramentas li,
+.listaArtigosNoticias li {
+    margin-bottom: 10px;
+}
+
+.listaCalculadorasFerramentas li a,
+.listaArtigosNoticias li a {
+    color: #303030;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.listaFAQ .perguntaFAQ {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.listaFAQ .perguntaFAQ strong {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Estilos para a seção de Comunidade */
+.sectionComunidade {
+    width: 90dvw;
+    margin: 40px auto;
+    border-radius: 50px;
+    background-color: #f58172;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.tituloComunidade {
+    font-size: 36px;
+    text-align: center;
+    border-bottom: 8px solid black;
+    padding-bottom: 25px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.comunidadeForumDiscussao,
+.comunidadeHistoriasSucesso,
+.comunidadeDesafiosEventos {
+    background-color: #f9a79d;
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tituloForumDiscussao,
+.tituloHistoriasSucesso,
+.tituloDesafiosEventos {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.comunidadeForumDiscussao p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.comunidadeForumDiscussao a.linkComunidade {
+    display: inline-block;
+    background-color: #303030;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.comunidadeForumDiscussao a.linkComunidade:hover {
+    background-color: #505050;
+}
+
+.historiaSucesso {
+    border-left: 5px solid #303030;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.comunidadeDesafiosEventos p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+footer{
+    background-color: #303030;
+    margin-top: 40px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.voltarAoInicio{
+    background-color: white;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.voltarAoInicio img{
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 1000px) {
     /* ul{
         gap: 5px;
         flex-direction: column;
@@ -244,10 +690,11 @@ header{
     header{
         flex-direction: column;
         padding: 0px 0px;
+        height: auto;
     }
 
     .logo{
-        margin: 0 auto;
+        margin: 20px auto;
     }
 
     .imagemAlimentacaoDicas{
@@ -260,24 +707,93 @@ header{
         /* margin: 0 auto; */
         flex: 100%;
         width: 100%;
-        height: 0;
+        height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
+        padding-bottom: 20px;
         /* padding-right: 20%; */
     }
 
-    .navbar ul li{
-        border-bottom: 3px solid #404040;
+    .navbar ul{
+        flex-direction: column;
+        align-items: center;
     }
-    
+
+    .navbar ul li{
+        margin: 10px 0;
+        border-bottom: 3px solid #404040;
+        padding-bottom: 5px;
+    }
+
+    .apresentacao,
+    .sectionAlimentacaoSaudavel .alimentacaoSaudaveDicasPraticas,
+    .sectionExerciciosFisicos .exerciciosFisicosEncontreAtividade,
+    .sectionSaudeMental .saudeMentalEntendendo {
+        flex-direction: column;
+    }
+
+    .imagemApresentacao,
+    .imagemAlimentacaoDicas,
+    .imagemExerciciosAtividade,
+    .imagemEntendendoSaudeMental {
+        min-height: auto;
+        height: 300px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
 }
 
-@media (max-width: 550px) { 
-    
+@media (max-width: 550px) {
+
     ul{
         /* font-size: 13px; */
         gap: 10px;
-        flex-direction: row;
+        flex-direction: column;
+    }
+
+    .containerApresentacao{
+        padding: 40px 20px;
+    }
+
+    .containerApresentacao p{
+        margin: 0 20px;
+        font-size: 16px;
+    }
+
+    .tituloAlimentacaoSaudavel,
+    .tituloExerciciosFisicos,
+    .tituloSaudeMental,
+    .tituloRecursosApoio,
+    .tituloComunidade {
+        font-size: 28px;
+    }
+
+    .tituloAlimentacaoDicas,
+    .tituloExerciciosAtividade,
+    .tituloEntendendoSaudeMental,
+    .tituloDicasBemEstar,
+    .tituloOndeBuscarAjuda,
+    .tituloCalculadorasFerramentas,
+    .tituloArtigosNoticias,
+    .tituloFAQ,
+    .tituloForumDiscussao,
+    .tituloHistoriasSucesso,
+    .tituloDesafiosEventos {
+        font-size: 24px;
+    }
+
+    .textoAlimentacaoDicas p,
+    .textoExerciciosAtividade p,
+    .textoEntendendoSaudeMental p,
+    .listaDicasBemEstar li,
+    .textoOndeBuscarAjuda p,
+    .listaCalculadorasFerramentas li,
+    .listaArtigosNoticias li,
+    .listaFAQ .perguntaFAQ,
+    .comunidadeForumDiscussao p,
+    .historiaSucesso,
+    .comunidadeDesafiosEventos p {
+        font-size: 16px;
     }
 }

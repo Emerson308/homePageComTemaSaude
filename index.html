@@ -5,33 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
 </head>
 <body>
     <header>
         <div class="logo"><h1>Saúde e Bem-Estar</h1></div>
         <nav class="navbar">
             <ul>
-                <li><a href="">Alimentação saudável</a></li>
-                <li><a href="">Exercícios físicos</a></li>
-                <li><a href="">Saúde mental</a></li>
-                <li><a href="">Recursos</a></li>
+                <li><a href="#alimentacao">Alimentação saudável</a></li>
+                <li><a href="#exercicios">Exercícios físicos</a></li>
+                <li><a href="#saudeMental">Saúde mental</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#comunidade">Comunidade</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <!-- <section class="apresentacao">
+        <section class="apresentacao">
             <div class="containerApresentacao">
                 <p>"⁠Pratique o autocuidado e reserve um tempo para cuidar de si mesmo. Cuide de sua saúde física, mental e emocional. Tire momentos para relaxar, praticar hobbies ou se engajar em atividades que te trazem alegria. Lembre-se de que seu bem-estar é importante e merece atenção."</p>
-
-                <button>Explore nossas dicas!</button>
+                <button onclick="scrollToSection('alimentacao')">Explore nossas dicas!</button>
             </div>
             <div class="imagemApresentacao">
 
             </div>
-        </section> -->
-        <section class="sectionAlimentacaoSaudavel">
+        </section>
+        <section id="alimentacao" class="sectionAlimentacaoSaudavel">
             <div class="containerAlimentacaoSaudavel">
-                <!-- <div class="tituloAlimentacaoSaudavel">
+                <div class="tituloAlimentacaoSaudavel">
                     Desvende os segredos de uma Alimentação Equilibrada!
                 </div>
                 <div class="alimentacaoSaudaveDicasPraticas">
@@ -44,19 +45,187 @@
                             <p>Mantenha-se hidratado bebendo bastante água.</p>
                             <p>Planeje suas refeições para evitar escolhas impulsivas.</p>
                         </div>
-
                     </div>
                     <div class="imagemAlimentacaoDicas">
-                        
+
                     </div>
-                </div> -->
+                </div>
                 <div class="alimentacaoSaudavelCarroceldeReceitas">
                     <div class="tituloCarrocelReceitas">Conheça receitas saudáveis!</div>
-                    <div class="carrocelReceitas"></div>
+                    <div class="carrocelReceitas js-flickity">
+                        <div onclick="enviarParaReceita(`https://receitasmondial.com.br/receitas/mousse-de-coco/`)" class="receitaDoCarrossel">
+                            <div class="nomeReceitaCarrossel">Mousse de Coco</div>
+                            <div class="imagemReceitaCarrossel">
+                                <img src="https://receitasmondial.com.br/wp-content/uploads/2025/02/shutterstock_1873827316-300x200.jpg" alt="">
+                            </div>
+                        </div>
+                        <div onclick="enviarParaReceita(`https://receitasmondial.com.br/receitas/5365/`)" class="receitaDoCarrossel">
+                            <div class="nomeReceitaCarrossel">Dadinhos de berinjela</div>
+                            <div class="imagemReceitaCarrossel">
+                                <img src="https://receitasmondial.com.br/wp-content/uploads/2024/11/shutterstock_2405271711-300x200.jpg" alt="">
+                            </div>
+                        </div>
+                        <div onclick="enviarParaReceita(`https://receitasmondial.com.br/receitas/muffins-de-ovos-e-legumes/`)" class="receitaDoCarrossel">
+                            <div class="nomeReceitaCarrossel">Muffins de Ovos e Legumes</div>
+                            <div class="imagemReceitaCarrossel">
+                                <img src="https://receitasmondial.com.br/wp-content/uploads/2024/10/Muffins-de-Ovos-e-Legumes-mondial-300x200.jpg" alt="">
+                            </div>
+                        </div>
+                        <div onclick="enviarParaReceita(`https://receitasmondial.com.br/receitas/brocolis-crocante/`)" class="receitaDoCarrossel">
+                            <div class="nomeReceitaCarrossel">Brócolis Crocante</div>
+                            <div class="imagemReceitaCarrossel">
+                                <img src="https://receitasmondial.com.br/wp-content/uploads/2024/10/brocolis-crocante-mondial-300x200.jpg" alt="">
+                            </div>
+                        </div>
+                        <div onclick="enviarParaReceita(`https://receitasmondial.com.br/receitas/stir-fry-de-frango-com-vegetais/`)" class="receitaDoCarrossel">
+                            <div class="nomeReceitaCarrossel">Stir-fry de Frango com Vegetais</div>
+                            <div class="imagemReceitaCarrossel">
+                                <img src="https://receitasmondial.com.br/wp-content/uploads/2024/09/shutterstock_316468865-300x200.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="exercicios" class="sectionExerciciosFisicos">
+            <div class="containerExerciciosFisicos">
+                <div class="tituloExerciciosFisicos">
+                    Descubra o Prazer de se Movimentar!
+                </div>
+                <div class="exerciciosFisicosEncontreAtividade">
+                    <div class="containerExerciciosAtividade">
+                        <div class="tituloExerciciosAtividade">Encontre sua atividade:</div>
+                        <div class="textoExerciciosAtividade">
+                            <p>Benefícios de diferentes tipos de exercícios (cardio, força, flexibilidade).</p>
+                            <p>Dicas para iniciantes e para quem quer retomar a atividade física.</p>
+                            <p>Sugestões de atividades para fazer em casa, ao ar livre e na academia.</p>
+                        </div>
+                    </div>
+                    <div class="imagemExerciciosAtividade">
+                        </div>
+                </div>
+                <div class="exerciciosFisicosPlanosDeTreino">
+                    <div class="tituloPlanosDeTreino">Planos de Treino:</div>
+                    <div class="containerPlanosDeTreino">
+                        <div class="planoDeTreino">
+                            <h3>Treino Rápido para o Dia a Dia</h3>
+                            <ul>
+                                <li>5 minutos de aquecimento</li>
+                                <li>10 minutos de exercícios cardiovasculares leves</li>
+                                <li>5 minutos de alongamento</li>
+                            </ul>
+                        </div>
+                        <div class="planoDeTreino">
+                            <h3>Sequência de Exercícios para Fortalecer o Corpo</h3>
+                            <ul>
+                                <li>Agachamentos: 3 séries de 10 repetições</li>
+                                <li>Flexões: 3 séries de quantas repetições conseguir</li>
+                                <li>Abdominais: 3 séries de 15 repetições</li>
+                            </ul>
+                        </div>
+                        <div class="planoDeTreino">
+                            <h3>Alongamentos para Relaxar e Melhorar a Flexibilidade</h3>
+                            <ul>
+                                <li>Alongamento de pescoço</li>
+                                <li>Alongamento de ombros</li>
+                                <li>Alongamento de pernas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="exerciciosFisicosImportanciaRegularidade">
+                    <div class="tituloImportanciaRegularidade">A Importância da Regularidade:</div>
+                    <div class="textoImportanciaRegularidade">
+                        <p>Como criar e manter uma rotina de exercícios.</p>
+                        <p>Dicas para superar a falta de motivação.</p>
+                        <p>O impacto da atividade física na prevenção de doenças.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="saudeMental" class="sectionSaudeMental">
+            <div class="containerSaudeMental">
+                <div class="tituloSaudeMental">
+                    Priorize Sua Saúde Mental, Cultive o Equilíbrio!
+                </div>
+                <div class="saudeMentalEntendendo">
+                    <div class="tituloEntendendoSaudeMental">Entendendo a Saúde Mental:</div>
+                    <div class="textoEntendendoSaudeMental">
+                        <p>O que é saúde mental e por que ela é tão importante.</p>
+                        <p>Sinais de alerta para buscar ajuda.</p>
+                        <p>A conexão entre saúde mental e saúde física.</p>
+                    </div>
+                    <div class="imagemEntendendoSaudeMental">
+                        </div>
+                </div>
+                <div class="saudeMentalDicasBemEstar">
+                    <div class="tituloDicasBemEstar">Dicas para o Bem-Estar Emocional:</div>
+                    <ul class="listaDicasBemEstar">
+                        <li>Práticas de mindfulness e meditação.</li>
+                        <li>Técnicas de gerenciamento do estresse e da ansiedade.</li>
+                        <li>A importância do sono de qualidade.</li>
+                        <li>Cultivar relacionamentos saudáveis.</li>
+                        <li>Buscar atividades que tragam alegria e relaxamento.</li>
+                    </ul>
+                </div>
+                <div class="saudeMentalOndeBuscarAjuda">
+                    <div class="tituloOndeBuscarAjuda">Onde Buscar Ajuda:</div>
+                    <div class="textoOndeBuscarAjuda">
+                        <p>Informações sobre profissionais de saúde mental (psicólogos, psiquiatras).</p>
+                        <p><a href="#">Links para serviços de apoio e acolhimento.</a></p>
+                        <p><a href="#">Recursos online para saúde mental.</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="recursos" class="sectionRecursosApoio">
+            <div class="containerRecursosApoio">
+                <div class="tituloRecursosApoio">
+                    Encontre Ferramentas e Suporte para Sua Saúde!
+                </div>
+                <div class="recursosCalculadorasFerramentas">
+                    <div class="tituloCalculadorasFerramentas">Calculadoras e Ferramentas:</div>
+                    <ul class="listaCalculadorasFerramentas">
+                        <li><a href="#">Calculadora de IMC</a></li>
+                        <li><a href="#">Planejador de Refeições</a></li>
+                        <li><a href="#">Monitor de Hidratação</a></li>
+                    </ul>
+                </div>
+                <div class="recursosArtigosNoticias">
+                    <div class="tituloArtigosNoticias">Artigos e Notícias:</div>
+                    <ul class="listaArtigosNoticias">
+                        <li><a href="#">Últimas descobertas sobre saúde e bem-estar.</a></li>
+                        <li><a href="#">Entrevistas com especialistas.</a></li>
+                    </ul>
+                </div>
+                <div class="recursosFAQ">
+                    <div class="tituloFAQ">Perguntas Frequentes (FAQ):</div>
+                    <div class="listaFAQ">
+                        <div class="perguntaFAQ">
+                            <strong>Qual a importância de beber água?</strong>
+                            <p>A água é essencial para diversas funções do corpo, incluindo hidratação, transporte de nutrientes e regulação da temperatura.</p>
+                        </div>
+                        <div class="perguntaFAQ">
+                            <strong>Quantas vezes por semana devo me exercitar?</strong>
+                            <p>A recomendação geral é de pelo menos 150 minutos de atividade física moderada ou 75 minutos de atividade intensa por semana.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div onclick="voltarAoTopo()" class="voltarAoInicio">
+            <img src="imagens/keyboard_control_key_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="">
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+    <script>
+        function scrollToSection(id) {
+            const element = document.getElementById(id);
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
